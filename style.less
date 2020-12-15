@@ -1,0 +1,43 @@
+h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 60px;
+    height: 80vh;
+    color: gray;
+  }
+.parallax {
+    z-index: -1;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    overflow: hidden;
+    width: 100%;
+    min-height: 100vh;
+    background-color: #ccc;
+  
+    &__image {
+      position: absolute;
+      top: -3%;
+      left: -3%;
+      height: 106%;
+      width: 106%;
+      filter: saturate(2);
+  
+      &-00 {
+        background: url("img/mike-marrah-5ZnDYzx3ZTg-unsplash.jpg") center
+          no-repeat;
+        background-size: cover;
+      }
+      &-10 {
+        background:linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+         url("img/fon1.png") center
+          no-repeat;
+        background-size: cover;
+      }
+
+    }
+  }
+  
